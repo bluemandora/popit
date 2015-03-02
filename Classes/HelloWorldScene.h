@@ -7,9 +7,9 @@ USING_NS_CC;
 class HelloWorld : public cocos2d::Layer
 {
 public:
-
 	cocos2d::Point begin, end;
 	CardSprite* card[4][4];
+	CardSprite* select_card;
 	int score, high_score;
 	cocos2d::Label* score_label, * high_score_label;
 
@@ -27,6 +27,7 @@ public:
 	bool doDown();
 	bool doLeft();
 	bool doRight();
+	CardSprite* getCardSprite(Size size, Point point);
 	void createAllCardSprite(Size size);
 	void autoCreateCard();
 	void checkGameOver();

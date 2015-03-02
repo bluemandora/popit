@@ -62,6 +62,7 @@ bool HelloWorld::init()
 	high_score_label->setPosition(size.width * 2 / 3, size.height * 3 / 4 + 50);
 	addChild(high_score_label);
 	
+	select_card = NULL;
 	HelloWorld::createAllCardSprite(size);
 	HelloWorld::autoCreateCard();
 	HelloWorld::autoCreateCard();
@@ -73,6 +74,8 @@ void HelloWorld::createAllCardSprite(Size size) {
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
 			card[i][j] = CardSprite::createCardSprite(0, len, len, (double)len*i+20, (double)len*j + size.height/8);
+			card[i][j]->setX(i);
+			card[i][j]->setY(j);
 			addChild(card[i][j]);
 		}
 	}
@@ -94,38 +97,81 @@ bool HelloWorld::onTouchBegan(Touch *touch, Event *unused_event) {
 
 void HelloWorld::onTouchEnded(Touch *touch, Event *unused_event) {
 	end = touch->getLocation();
-	if (abs(begin.x - end.x) > abs(begin.y - end.y)) {
-		//left or right
-		if (end.x > begin.x + 5) {
-			// right
-			if (doRight()) {
-				autoCreateCard();
-				checkGameOver();
+	if (abs(begin.x - end.x) < 5 && abs(begin.y - end.y) < 5) {
+		//click
+		Point point = touch->getLocation();
+		Size size = Director::getInstance()->getVisibleSize();
+		CardSprite* click_card = getCardSprite(size, point);
+		if (click_card) {
+			if (select_card == click_card) {
+				click_card->clearSelect();
+				select_card = NULL;
 			}
-		}
-		else if (end.x < begin.x - 5) {
-			//left
-			if (doLeft()) {
-				autoCreateCard();
-				checkGameOver();
+			else if (select_card) {
+				select_card->clearSelect();
+				int tmp = select_card->getNum();
+				select_card->setNum(click_card->getNum());
+				click_card->setNum(tmp);
+				select_card = NULL;
 			}
+			else {
+				click_card->setSelect();
+				select_card = click_card;
+			}
+			
 		}
 	}
 	else {
-		if (end.y > begin.y + 5) {
-			//up
-			if (doUp()) {
-				autoCreateCard();
-				checkGameOver();
+		if (select_card) {
+			select_card->clearSelect();
+		}
+		select_card = NULL;
+		if (abs(begin.x - end.x) > abs(begin.y - end.y)) {
+
+			//left or right
+			if (end.x > begin.x + 5) {
+				// right
+				if (doRight()) {
+					autoCreateCard();
+					checkGameOver();
+				}
+			}
+			else if (end.x < begin.x - 5) {
+				//left
+				if (doLeft()) {
+					autoCreateCard();
+					checkGameOver();
+				}
 			}
 		}
-		else if (end.y < begin.y - 5) {
-			//down
-			if (doDown()) {
-				autoCreateCard();
-				checkGameOver();
+		else {
+			if (end.y > begin.y + 5) {
+				//up
+				if (doUp()) {
+					autoCreateCard();
+					checkGameOver();
+				}
+			}
+			else if (end.y < begin.y - 5) {
+				//down
+				if (doDown()) {
+					autoCreateCard();
+					checkGameOver();
+				}
 			}
 		}
+	}
+}
+
+CardSprite* HelloWorld::getCardSprite(Size size, Point point) {
+	int len = (size.width - 28) / 4;
+	int x = (point.x - 20) / len;
+	int y = (point.y - size.height / 8) / len;
+	if (x >= 0 && x < 4 && y >= 0 && y < 4) {
+		return card[x][y];
+	}
+	else {
+		return NULL;
 	}
 }
 

@@ -36,58 +36,50 @@ void CardSprite::setSizeAndColor(int num) {
 		cardNumber->setSystemFontSize(100);
 	}
 
-	//设置卡片颜色
-	if (num == 0) {
-		cardBgcolor->setColor(Color3B(200, 190, 180));
-	}
-	else if (num == 2) {
+	if (num != 0) {
 		cardBgcolor->setColor(Color3B(238, 230, 193));
 	}
-	else if (num == 4) {
-		cardBgcolor->setColor(Color3B(255, 236, 139));
-	}
-	else if (num == 8) {
-		cardBgcolor->setColor(Color3B(240, 180, 120));
-	}
-	else if (num == 16) {
-		cardBgcolor->setColor(Color3B(240, 140, 90));
-	}
-	else if (num == 32) {
-		cardBgcolor->setColor(Color3B(240, 120, 90));
-	}
-	else if (num == 64) {
-		cardBgcolor->setColor(Color3B(240, 90, 60));
-	}
-	else if (num == 128) {
-		cardBgcolor->setColor(Color3B(220, 90, 60));
-	}
-	else if (num == 256) {
-		cardBgcolor->setColor(Color3B(240, 200, 70));
-	}
-	else if (num == 512) {
-		cardBgcolor->setColor(Color3B(220, 200, 70));
-	}
-	else if (num == 1024) {
-		cardBgcolor->setColor(Color3B(255, 236, 139));
-	}
-	else if (num == 2048) {
-		cardBgcolor->setColor(Color3B(255, 236, 139));
-	}
 	else {
-		cardBgcolor->setColor(Color3B(144, 144, 144));
+		cardBgcolor->setColor(Color3B(200, 190, 180));
 	}
 }
 
+void CardSprite::setSelect() {
+	cardBgcolor->setColor(Color3B(240, 90, 60));
+}
+
+void CardSprite::clearSelect() {
+	cardBgcolor->setColor(Color3B(200, 190, 180));
+}
+
+void CardSprite::setX(int x) {
+	X = x;
+}
+int CardSprite::getX(){
+	return X;
+}
+void CardSprite::setY(int y) {
+	Y = y;
+}
+int CardSprite::getY(){
+	return Y;
+}
+
+
 void CardSprite::setNum(int num) {
+	log("%i, %i: %i", X, Y, num);
 	number = num;
-	CardSprite::setSizeAndColor(num);
+	
 	// 更新显示
 	if (number != 0) {
 		cardNumber->setString(__String::createWithFormat("%i", number)->getCString());
+		cardBgcolor->setColor(Color3B(238, 230, 193));
 	}
 	else {
 		cardNumber->setString("");
+		cardBgcolor->setColor(Color3B(200, 190, 180));
 	}
+	CardSprite::setSizeAndColor(num);
 }
 
 int CardSprite::getNum() {

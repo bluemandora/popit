@@ -7,10 +7,17 @@ public:
 	CREATE_FUNC(CardSprite);
 
 	void setNum(int num);
+	void setNewNum(int num);
 	int getNum();
+	void setX(int x);
+	int getX();
+	void setY(int y);
+	int getY();
 	void setSizeAndColor(int num);
+	void setSelect();
+	void clearSelect();
 private:
-	int number;
+	int number, X, Y;
 	//Êý×Ö
 	Label* cardNumber;
 	void cardInit(int num, int width, int height, double card_x, double card_y);
