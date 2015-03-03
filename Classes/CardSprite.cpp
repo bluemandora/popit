@@ -36,20 +36,85 @@ void CardSprite::setSizeAndColor(int num) {
 		cardNumber->setSystemFontSize(100);
 	}
 
-	if (num != 0) {
+
+	//设置卡片颜色
+	if (num == 0) {
+		cardBgcolor->setColor(Color3B(200, 190, 180));
+	}
+	else if (num == 2) {
 		cardBgcolor->setColor(Color3B(238, 230, 193));
 	}
+	else if (num == 4) {
+		cardBgcolor->setColor(Color3B(255, 236, 139));
+	}
+	else if (num == 8) {
+		cardBgcolor->setColor(Color3B(240, 180, 120));
+	}
+	else if (num == 16) {
+		cardBgcolor->setColor(Color3B(240, 140, 90));
+	}
+	else if (num == 32) {
+		cardBgcolor->setColor(Color3B(240, 120, 90));
+	}
+	else if (num == 64) {
+		cardBgcolor->setColor(Color3B(240, 90, 60));
+	}
+	else if (num == 128) {
+		cardBgcolor->setColor(Color3B(220, 90, 60));
+	}
+	else if (num == 256) {
+		cardBgcolor->setColor(Color3B(240, 200, 70));
+	}
+	else if (num == 512) {
+		cardBgcolor->setColor(Color3B(220, 200, 70));
+	}
+	else if (num == 1024) {
+		cardBgcolor->setColor(Color3B(255, 236, 139));
+	}
+	else if (num == 2048) {
+		cardBgcolor->setColor(Color3B(255, 236, 139));
+	}
 	else {
-		cardBgcolor->setColor(Color3B(200, 190, 180));
+		cardBgcolor->setColor(Color3B(144, 144, 144));
 	}
 }
 
 void CardSprite::setSelect() {
-	cardBgcolor->setColor(Color3B(240, 90, 60));
+	//cardBgcolor->setColor(Color3B(240, 90, 60));
+	GLenum src;
+	GLenum dst;
+	//设置混合方式  
+	if (cardBgcolor->getBlendFunc().dst == GL_ZERO)
+	{
+		src = GL_SRC_ALPHA;
+		dst = GL_ONE_MINUS_SRC_ALPHA;
+	}
+	else
+	{
+		src = GL_ONE_MINUS_DST_COLOR;
+		dst = GL_ZERO;
+	}
+	BlendFunc bf = { src, dst };
+	cardBgcolor->setBlendFunc(bf);
 }
 
 void CardSprite::clearSelect() {
-	cardBgcolor->setColor(Color3B(200, 190, 180));
+	//cardBgcolor->setColor(Color3B(200, 190, 180));
+	GLenum src;
+	GLenum dst;
+	//设置混合方式  
+	if (cardBgcolor->getBlendFunc().dst == GL_ZERO)
+	{
+		src = GL_SRC_ALPHA;
+		dst = GL_ONE_MINUS_SRC_ALPHA;
+	}
+	else
+	{
+		src = GL_ONE_MINUS_DST_COLOR;
+		dst = GL_ZERO;
+	}
+	BlendFunc bf = { src, dst };
+	cardBgcolor->setBlendFunc(bf);
 }
 
 void CardSprite::setX(int x) {
@@ -67,7 +132,6 @@ int CardSprite::getY(){
 
 
 void CardSprite::setNum(int num) {
-	log("%i, %i: %i", X, Y, num);
 	number = num;
 	
 	// 更新显示

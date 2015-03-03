@@ -49,7 +49,7 @@ bool HelloWorld::init()
 	addChild(text_label);
 
 	Label* text_label2 = Label::create("High Score: ", "Arial", 100);
-	text_label2->setPosition(size.width / 3, size.height * 3 / 4 + 50);
+	text_label2->setPosition(size.width / 3, size.height * 3 / 4 + 100);
 	addChild(text_label2);
 
 	score_label = Label::create("0", "Arial", 100);
@@ -59,7 +59,7 @@ bool HelloWorld::init()
 
 	high_score = CCUserDefault::sharedUserDefault()->getIntegerForKey("high");
 	high_score_label = Label::create(__String::createWithFormat("%i", high_score)->getCString(), "Arial", 100);
-	high_score_label->setPosition(size.width * 2 / 3, size.height * 3 / 4 + 50);
+	high_score_label->setPosition(size.width * 2 / 3, size.height * 3 / 4 + 100);
 	addChild(high_score_label);
 	
 	select_card = NULL;
@@ -82,7 +82,8 @@ void HelloWorld::createAllCardSprite(Size size) {
 }
 
 void HelloWorld::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event) {
-	if (keyCode == EventKeyboard::KeyCode::KEY_BACKSPACE) {
+	if (keyCode == EventKeyboard::KeyCode::KEY_BACKSPACE ||
+			keyCode == EventKeyboard::KeyCode::KEY_ESCAPE) {
 		Director::getInstance()->end();
 	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 		exit(0);
