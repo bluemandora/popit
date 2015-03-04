@@ -8,6 +8,7 @@ public:
 
 	void setNum(int num);
 	void setNewNum(int num);
+	LayerColor* getBgColor();
 	int getNum();
 	void setX(int x);
 	int getX();

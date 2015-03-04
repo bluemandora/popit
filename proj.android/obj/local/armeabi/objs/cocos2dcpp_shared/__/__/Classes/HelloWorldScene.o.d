@@ -1,17 +1,10 @@
 obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../Classes/HelloWorldScene.cpp \
  jni/../../Classes/HelloWorldScene.h \
- jni/../../cocos2d/cocos/3d/../cocos2d.h \
- jni/../../cocos2d/cocos/3d/../base/ccConfig.h \
- jni/../../cocos2d/cocos/3d/../platform/CCPlatformConfig.h \
- jni/../../cocos2d/cocos/3d/../base/CCRef.h \
- jni/../../cocos2d/cocos/3d/../platform/CCPlatformMacros.h \
- jni/../../cocos2d/cocos/3d/../base/ccConfig.h \
- jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h \
- jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h \
- E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/log.h \
- jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h \
- jni/../../cocos2d/cocos/3d/../base/CCRef.h \
+ jni/../../cocos2d/cocos/3d/../ui/CocosGUI.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIWidget.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCProtectedNode.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCNode.h \
  jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
  jni/../../cocos2d/cocos/3d/../base/CCConsole.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/select.h \
@@ -54,6 +47,13 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ jni/../../cocos2d/cocos/3d/../base/CCRef.h \
+ jni/../../cocos2d/cocos/3d/../platform/CCPlatformMacros.h \
+ jni/../../cocos2d/cocos/3d/../base/ccConfig.h \
+ jni/../../cocos2d/cocos/3d/../platform/CCPlatformConfig.h \
+ jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h \
+ jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h \
+ E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/log.h \
  jni/../../cocos2d/cocos/3d/../platform/CCStdC.h \
  jni/../../cocos2d/cocos/3d/../platform/android/CCStdC-android.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/math.h \
@@ -66,10 +66,8 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
  jni/../../cocos2d/cocos/3d/../base/CCVector.h \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- jni/../../cocos2d/cocos/3d/../base/CCMap.h \
- E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
- jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h \
- jni/../../cocos2d/cocos/3d/../base/CCNS.h \
+ jni/../../cocos2d/cocos/3d/../base/CCProtocols.h \
+ jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
  jni/../../cocos2d/cocos/3d/../math/CCGeometry.h \
  jni/../../cocos2d/cocos/3d/../math/CCMath.h \
  jni/../../cocos2d/cocos/3d/../math/Vec2.h \
@@ -87,25 +85,12 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../math/Mat4.h \
  jni/../../cocos2d/cocos/3d/../math/Quaternion.h \
  jni/../../cocos2d/cocos/3d/../math/Quaternion.inl \
- jni/../../cocos2d/cocos/3d/../base/CCData.h \
- jni/../../cocos2d/cocos/3d/../base/CCValue.h \
- jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
- jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
  jni/../../cocos2d/cocos/3d/../platform/CCGL.h \
  jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/GLES2/gl2platform.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/KHR/khrplatform.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/GLES2/gl2.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/GLES2/gl2ext.h \
- jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h \
- jni/../../cocos2d/cocos/3d/../base/CCValue.h \
- jni/../../cocos2d/cocos/3d/../base/CCDirector.h \
- E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
- jni/../../cocos2d/cocos/3d/../base/CCVector.h \
- jni/../../cocos2d/cocos/3d/../2d/CCScene.h \
- jni/../../cocos2d/cocos/3d/../2d/CCNode.h \
- jni/../../cocos2d/cocos/3d/../base/CCProtocols.h \
- jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
  jni/../../cocos2d/cocos/3d/../renderer/CCTexture2D.h \
  jni/../../cocos2d/cocos/3d/../base/CCScriptSupport.h \
  jni/../../cocos2d/cocos/3d/../platform/CCCommon.h \
@@ -115,6 +100,67 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../base/CCEventKeyboard.h \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
  jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h \
+ jni/../../cocos2d/cocos/3d/../ui/UILayoutParameter.h \
+ jni/../../cocos2d/cocos/3d/../ui/GUIExport.h \
+ jni/../../cocos2d/cocos/3d/../ui/GUIDefine.h \
+ jni/../../cocos2d/cocos/3d/../base/ObjectFactory.h \
+ E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ jni/../../cocos2d/cocos/3d/../base/CCMap.h \
+ jni/../../cocos2d/cocos/3d/../ui/UILayout.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCGroupCommand.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIButton.h \
+ jni/../../cocos2d/cocos/3d/../ui/UICheckBox.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIImageView.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIText.h \
+ jni/../../cocos2d/cocos/3d/../ui/UITextAtlas.h \
+ jni/../../cocos2d/cocos/3d/../ui/UILoadingBar.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIScrollView.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIListView.h \
+ jni/../../cocos2d/cocos/3d/../ui/UISlider.h \
+ jni/../../cocos2d/cocos/3d/../ui/UITextField.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCTextFieldTTF.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCLabel.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCSpriteBatchNode.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h \
+ jni/../../cocos2d/cocos/3d/../renderer/CCBatchCommand.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCFontAtlas.h \
+ jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h \
+ jni/../../cocos2d/cocos/3d/../ui/UITextBMFont.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIPageView.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIHelper.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIRichText.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIHBox.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIVBox.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIRelativeBox.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIVideoPlayer.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIWebView.h \
+ jni/../../cocos2d/cocos/3d/../base/CCData.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIDeprecated.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIScale9Sprite.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrame.h \
+ jni/../../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h \
+ jni/../../cocos2d/cocos/3d/../ui/UILayoutComponent.h \
+ jni/../../cocos2d/cocos/3d/../2d/CCComponent.h \
+ jni/../../cocos2d/cocos/3d/../cocos2d.h \
+ jni/../../cocos2d/cocos/3d/../base/ccConfig.h \
+ jni/../../cocos2d/cocos/3d/../base/CCRef.h \
+ jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h \
+ jni/../../cocos2d/cocos/3d/../base/CCVector.h \
+ jni/../../cocos2d/cocos/3d/../base/CCMap.h \
+ jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h \
+ jni/../../cocos2d/cocos/3d/../base/CCNS.h \
+ jni/../../cocos2d/cocos/3d/../base/CCData.h \
+ jni/../../cocos2d/cocos/3d/../base/CCValue.h \
+ jni/../../cocos2d/cocos/3d/../base/ccMacros.h \
+ jni/../../cocos2d/cocos/3d/../base/ccTypes.h \
+ jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h \
+ jni/../../cocos2d/cocos/3d/../base/CCValue.h \
+ jni/../../cocos2d/cocos/3d/../base/CCDirector.h \
+ E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
+ jni/../../cocos2d/cocos/3d/../2d/CCScene.h \
  jni/../../cocos2d/cocos/3d/../platform/CCGLView.h \
  jni/../../cocos2d/cocos/3d/../base/CCScheduler.h \
  E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/set \
@@ -124,17 +170,14 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../base/ZipUtils.h \
  jni/../../cocos2d/cocos/3d/../platform/android/CCFileUtils-android.h \
  jni/../../cocos2d/cocos/3d/../platform/CCFileUtils.h \
- jni/../../cocos2d/cocos/3d/../base/CCData.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/jni.h \
  E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/asset_manager.h \
  jni/../../cocos2d/cocos/3d/../base/CCProfiling.h \
- jni/../../cocos2d/cocos/3d/../base/CCMap.h \
  jni/../../cocos2d/cocos/3d/../base/CCConsole.h \
  jni/../../cocos2d/cocos/3d/../base/ccUTF8.h \
  jni/../../cocos2d/cocos/3d/../base/CCUserDefault.h \
  jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h \
  jni/../../cocos2d/cocos/3d/../base/CCIMEDispatcher.h \
- jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h \
  jni/../../cocos2d/cocos/3d/../base/ccUtils.h \
  jni/../../cocos2d/cocos/3d/../base/CCEventType.h \
  jni/../../cocos2d/cocos/3d/../base/CCEventDispatcher.h \
@@ -166,7 +209,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../2d/CCActionInterval.h \
  jni/../../cocos2d/cocos/3d/../2d/CCAction.h \
  jni/../../cocos2d/cocos/3d/../2d/CCAnimation.h \
- jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrame.h \
  jni/../../cocos2d/cocos/3d/../2d/CCActionCamera.h \
  jni/../../cocos2d/cocos/3d/../2d/CCActionInterval.h \
  jni/../../cocos2d/cocos/3d/../2d/CCActionManager.h \
@@ -187,20 +229,13 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../2d/CCProtectedNode.h \
  jni/../../cocos2d/cocos/3d/../2d/CCAtlasNode.h \
  jni/../../cocos2d/cocos/3d/../renderer/CCQuadCommand.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
  jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h \
  jni/../../cocos2d/cocos/3d/../2d/CCDrawingPrimitives.h \
  jni/../../cocos2d/cocos/3d/../2d/CCDrawNode.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h \
  jni/../../cocos2d/cocos/3d/../2d/CCLabelAtlas.h \
  jni/../../cocos2d/cocos/3d/../2d/CCAtlasNode.h \
  jni/../../cocos2d/cocos/3d/../2d/CCLabelTTF.h \
  jni/../../cocos2d/cocos/3d/../2d/CCLabelBMFont.h \
- jni/../../cocos2d/cocos/3d/../2d/CCLabel.h \
- jni/../../cocos2d/cocos/3d/../2d/CCSpriteBatchNode.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCBatchCommand.h \
- jni/../../cocos2d/cocos/3d/../2d/CCFontAtlas.h \
  jni/../../cocos2d/cocos/3d/../2d/CCLabel.h \
  jni/../../cocos2d/cocos/3d/../2d/CCFontFNT.h \
  jni/../../cocos2d/cocos/3d/../2d/CCFont.h \
@@ -215,8 +250,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
  jni/../../cocos2d/cocos/3d/../2d/CCLayer.h \
  jni/../../cocos2d/cocos/3d/../2d/CCMenuItem.h \
  jni/../../cocos2d/cocos/3d/../2d/CCClippingNode.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCGroupCommand.h \
- jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h \
  jni/../../cocos2d/cocos/3d/../2d/CCClippingRectangleNode.h \
  jni/../../cocos2d/cocos/3d/../2d/CCMotionStreak.h \
  jni/../../cocos2d/cocos/3d/../2d/CCProgressTimer.h \
@@ -356,27 +389,13 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/HelloWorldScene.o: \
 
 jni/../../Classes/HelloWorldScene.h:
 
-jni/../../cocos2d/cocos/3d/../cocos2d.h:
+jni/../../cocos2d/cocos/3d/../ui/CocosGUI.h:
 
-jni/../../cocos2d/cocos/3d/../base/ccConfig.h:
+jni/../../cocos2d/cocos/3d/../ui/UIWidget.h:
 
-jni/../../cocos2d/cocos/3d/../platform/CCPlatformConfig.h:
+jni/../../cocos2d/cocos/3d/../2d/CCProtectedNode.h:
 
-jni/../../cocos2d/cocos/3d/../base/CCRef.h:
-
-jni/../../cocos2d/cocos/3d/../platform/CCPlatformMacros.h:
-
-jni/../../cocos2d/cocos/3d/../base/ccConfig.h:
-
-jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h:
-
-jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h:
-
-E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/log.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCRef.h:
+jni/../../cocos2d/cocos/3d/../2d/CCNode.h:
 
 jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
 
@@ -462,6 +481,20 @@ E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
 E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
+jni/../../cocos2d/cocos/3d/../base/CCRef.h:
+
+jni/../../cocos2d/cocos/3d/../platform/CCPlatformMacros.h:
+
+jni/../../cocos2d/cocos/3d/../base/ccConfig.h:
+
+jni/../../cocos2d/cocos/3d/../platform/CCPlatformConfig.h:
+
+jni/../../cocos2d/cocos/3d/../platform/CCPlatformDefine.h:
+
+jni/../../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h:
+
+E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/log.h:
+
 jni/../../cocos2d/cocos/3d/../platform/CCStdC.h:
 
 jni/../../cocos2d/cocos/3d/../platform/android/CCStdC-android.h:
@@ -486,13 +519,9 @@ jni/../../cocos2d/cocos/3d/../base/CCVector.h:
 
 E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-jni/../../cocos2d/cocos/3d/../base/CCMap.h:
+jni/../../cocos2d/cocos/3d/../base/CCProtocols.h:
 
-E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
-
-jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCNS.h:
+jni/../../cocos2d/cocos/3d/../base/ccTypes.h:
 
 jni/../../cocos2d/cocos/3d/../math/CCGeometry.h:
 
@@ -528,14 +557,6 @@ jni/../../cocos2d/cocos/3d/../math/Quaternion.h:
 
 jni/../../cocos2d/cocos/3d/../math/Quaternion.inl:
 
-jni/../../cocos2d/cocos/3d/../base/CCData.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCValue.h:
-
-jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
-
-jni/../../cocos2d/cocos/3d/../base/ccTypes.h:
-
 jni/../../cocos2d/cocos/3d/../platform/CCGL.h:
 
 jni/../../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
@@ -547,24 +568,6 @@ E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/KHR/khrpla
 E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/GLES2/gl2.h:
 
 E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/GLES2/gl2ext.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCValue.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCDirector.h:
-
-E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
-
-jni/../../cocos2d/cocos/3d/../base/CCVector.h:
-
-jni/../../cocos2d/cocos/3d/../2d/CCScene.h:
-
-jni/../../cocos2d/cocos/3d/../2d/CCNode.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCProtocols.h:
-
-jni/../../cocos2d/cocos/3d/../base/ccTypes.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCTexture2D.h:
 
@@ -584,6 +587,128 @@ E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
 jni/../../cocos2d/cocos/3d/../math/CCAffineTransform.h:
 
+jni/../../cocos2d/cocos/3d/../ui/UILayoutParameter.h:
+
+jni/../../cocos2d/cocos/3d/../ui/GUIExport.h:
+
+jni/../../cocos2d/cocos/3d/../ui/GUIDefine.h:
+
+jni/../../cocos2d/cocos/3d/../base/ObjectFactory.h:
+
+E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+
+jni/../../cocos2d/cocos/3d/../base/CCMap.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UILayout.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCGroupCommand.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIButton.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UICheckBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIImageView.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIText.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UITextAtlas.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UILoadingBar.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIScrollView.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIListView.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UISlider.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UITextField.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCTextFieldTTF.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCLabel.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCSpriteBatchNode.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h:
+
+jni/../../cocos2d/cocos/3d/../renderer/CCBatchCommand.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCFontAtlas.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UITextBMFont.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIPageView.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIHelper.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIRichText.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIHBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIVBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIRelativeBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIVideoPlayer.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIWebView.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCData.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIDeprecated.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIScale9Sprite.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrame.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UILayoutComponent.h:
+
+jni/../../cocos2d/cocos/3d/../2d/CCComponent.h:
+
+jni/../../cocos2d/cocos/3d/../cocos2d.h:
+
+jni/../../cocos2d/cocos/3d/../base/ccConfig.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCRef.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCRefPtr.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCVector.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCMap.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCAutoreleasePool.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCNS.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCData.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCValue.h:
+
+jni/../../cocos2d/cocos/3d/../base/ccMacros.h:
+
+jni/../../cocos2d/cocos/3d/../base/ccTypes.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCConfiguration.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCValue.h:
+
+jni/../../cocos2d/cocos/3d/../base/CCDirector.h:
+
+E:/Android/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
+
+jni/../../cocos2d/cocos/3d/../2d/CCScene.h:
+
 jni/../../cocos2d/cocos/3d/../platform/CCGLView.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCScheduler.h:
@@ -602,15 +727,11 @@ jni/../../cocos2d/cocos/3d/../platform/android/CCFileUtils-android.h:
 
 jni/../../cocos2d/cocos/3d/../platform/CCFileUtils.h:
 
-jni/../../cocos2d/cocos/3d/../base/CCData.h:
-
 E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/jni.h:
 
 E:/Android/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/android/asset_manager.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCProfiling.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCMap.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCConsole.h:
 
@@ -621,8 +742,6 @@ jni/../../cocos2d/cocos/3d/../base/CCUserDefault.h:
 jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h:
 
 jni/../../cocos2d/cocos/3d/../base/CCIMEDispatcher.h:
-
-jni/../../cocos2d/cocos/3d/../base/CCIMEDelegate.h:
 
 jni/../../cocos2d/cocos/3d/../base/ccUtils.h:
 
@@ -686,8 +805,6 @@ jni/../../cocos2d/cocos/3d/../2d/CCAction.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCAnimation.h:
 
-jni/../../cocos2d/cocos/3d/../2d/CCSpriteFrame.h:
-
 jni/../../cocos2d/cocos/3d/../2d/CCActionCamera.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCActionInterval.h:
@@ -728,15 +845,11 @@ jni/../../cocos2d/cocos/3d/../2d/CCAtlasNode.h:
 
 jni/../../cocos2d/cocos/3d/../renderer/CCQuadCommand.h:
 
-jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
-
 jni/../../cocos2d/cocos/3d/../renderer/CCGLProgramState.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCDrawingPrimitives.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCDrawNode.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCCustomCommand.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCLabelAtlas.h:
 
@@ -745,16 +858,6 @@ jni/../../cocos2d/cocos/3d/../2d/CCAtlasNode.h:
 jni/../../cocos2d/cocos/3d/../2d/CCLabelTTF.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCLabelBMFont.h:
-
-jni/../../cocos2d/cocos/3d/../2d/CCLabel.h:
-
-jni/../../cocos2d/cocos/3d/../2d/CCSpriteBatchNode.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCTextureAtlas.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCBatchCommand.h:
-
-jni/../../cocos2d/cocos/3d/../2d/CCFontAtlas.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCLabel.h:
 
@@ -783,10 +886,6 @@ jni/../../cocos2d/cocos/3d/../2d/CCLayer.h:
 jni/../../cocos2d/cocos/3d/../2d/CCMenuItem.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCClippingNode.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCGroupCommand.h:
-
-jni/../../cocos2d/cocos/3d/../renderer/CCRenderCommand.h:
 
 jni/../../cocos2d/cocos/3d/../2d/CCClippingRectangleNode.h:
 

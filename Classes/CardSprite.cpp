@@ -150,6 +150,10 @@ int CardSprite::getNum() {
 	return number;
 }
 
+LayerColor* CardSprite::getBgColor() {
+	return cardBgcolor;
+}
+
 void CardSprite::cardInit(int num, int width, int height, double card_x, double card_y) {
 	number = num;
 	cardBgcolor = LayerColor::create(Color4B(200, 190, 180, 255), width - 15, height - 15);
